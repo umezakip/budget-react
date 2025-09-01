@@ -508,12 +508,12 @@ const App = () => {
       </div>
 
       <div className="w-full max-w-4xl bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-2xl">
-        <h1 className="text-4xl font-extrabold text-center text-sky-600 mb-2">Pocket Watching</h1>
-        <p className="text-center text-sm text-gray-600 mb-6">Keeping personal finances flexible.</p>
+        <h1 className="text-4xl font-extrabold text-center text-sky-600 mb-2 font-poppins">Pocket Watching</h1>
+        <p className="text-center text-sm text-gray-600 mb-6 font-poppins">Keeping personal finances flexible.</p>
 
         {/* Budget Settings */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Budget Settings</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">Budget Settings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div className="p-4 rounded-lg bg-gray-200 shadow-md">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Set Overall Budget</h3>
@@ -595,7 +595,7 @@ const App = () => {
         
         {/* Budget Summary */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Summary</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">Summary</h2>
           {budgetMode === 'overall' ? (
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
               <div className="bg-gray-200 p-4 rounded-lg shadow-md">
@@ -637,7 +637,7 @@ const App = () => {
 
         {/* Spending Chart */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Spending by Category</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">Spending by Category</h2>
           {spendingData.length > 0 ? (
             <div className="w-full h-80">
               <ResponsiveContainer width="100%" height="100%">
@@ -659,14 +659,14 @@ const App = () => {
         </div>
         
         {/* Transactions Section */}
-        <h1 className="text-4xl font-bold text-sky-400">Transactions</h1>
+        <h1 className="text-4xl font-bold text-sky-400 font-poppins">Transactions</h1>
         <p className="text-center text-sm text-gray-600 mb-6">Manage all your one-time and recurring transactions.</p>
         
         <hr className="border-gray-300 my-8"/>
         
         {/* Add/Edit Income */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">{editingTransaction && editingTransaction.type === 'income' ? 'Edit Income' : 'Add One-Time Income'}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">{editingTransaction && editingTransaction.type === 'income' ? 'Edit Income' : 'Add One-Time Income'}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <input
               type="text"
@@ -706,7 +706,7 @@ const App = () => {
 
         {/* Add/Edit Expense */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">{editingTransaction && editingTransaction.type === 'expense' ? 'Edit Expense' : 'Add One-Time Expense'}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">{editingTransaction && editingTransaction.type === 'expense' ? 'Edit Expense' : 'Add One-Time Expense'}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             <input
               type="text"
@@ -759,7 +759,7 @@ const App = () => {
         
         {/* Recurring Transactions */}
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Set Recurring Transaction</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">Set Recurring Transaction</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             <input
               type="text"
@@ -813,7 +813,7 @@ const App = () => {
             </button>
           </div>
           <div className="mt-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Your Recurring Transactions</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2 font-poppins">Your Recurring Transactions</h3>
             {recurringTransactions.length === 0 ? (
               <p className="text-gray-600">No recurring transactions set up yet.</p>
             ) : (
@@ -849,7 +849,7 @@ const App = () => {
         
         {/* History */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">One-Time Transaction History</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">One-Time Transaction History</h2>
           {transactions.length === 0 ? (
             <p className="text-gray-600 text-center">No transactions added yet.</p>
           ) : (
@@ -897,14 +897,14 @@ const App = () => {
         </div>
         
         {/* Savings Goals Section */}
-        <h1 className="text-4xl font-bold text-sky-400 mt-12">Savings Goals</h1>
+        <h1 className="text-4xl font-bold text-sky-400 mt-12 font-poppins">Savings Goals</h1>
         <p className="text-center text-sm text-gray-600 mb-6">Create and track your progress towards financial goals.</p>
 
         <hr className="border-gray-300 my-8"/>
 
         {/* Add Savings Goals */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Create New Goal</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">Create New Goal</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
@@ -933,7 +933,7 @@ const App = () => {
 
         {/* Savings Goal List */}
         <div className="mt-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Your Goals</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">Your Goals</h2>
           {savingsGoals.length === 0 ? (
             <p className="text-gray-600">No savings goals created yet.</p>
           ) : (
