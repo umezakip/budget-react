@@ -3,11 +3,17 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithCustomToken, signInAnonymously } from 'firebase/auth';
 import { getFirestore, collection, onSnapshot, addDoc, serverTimestamp, query, doc, setDoc, deleteDoc, updateDoc } from 'firebase/firestore';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { getAnalytics } from "firebase/analytics";
+
 
 // Global variables provided by the environment
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+const firebaseConfig = JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
+const appId = import.meta.env.VITE_APP_ID;
+const initialAuthToken = import.meta.env.VITE_INITIAL_AUTH_TOKEN;
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Main App component
 const App = () => {
