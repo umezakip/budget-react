@@ -508,8 +508,8 @@ const App = () => {
       </div>
 
       <div className="w-full max-w-4xl bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-2xl">
-        <h1 className="text-4xl font-extrabold text-center text-sky-600 mb-2">Budget Buddy</h1>
-        <p className="text-center text-sm text-gray-600 mb-6">Your personal finance manager.</p>
+        <h1 className="text-4xl font-extrabold text-center text-sky-600 mb-2">Pocket Watching</h1>
+        <p className="text-center text-sm text-gray-600 mb-6">Keeping personal finances flexible.</p>
 
         {/* Budget Settings */}
         <div className="mb-8">
